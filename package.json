@@ -8,14 +8,17 @@
 		"roblox-ts-sandbox"
 	],
 	"scripts": {
-		"check": "bun run check:node && bun run roblox:compile",
+		"check": "bun run check:node && bun run roblox:compile && bun run compose:check",
 		"check:node": "bun run typecheck && bun run lint && bun run cspell && bun test",
+		"compose:check": "docker compose config --quiet",
 		"test": "bun test",
 		"test:watch": "bun test --watch",
 		"typecheck": "tsc --noEmit",
 		"lint": "biome lint .",
-		"format:check": "biome format .",
-		"format:write": "biome format . --write",
+		"format:check": "biome format . && bun run format:yaml:check",
+		"format:write": "biome format . --write && bun run format:yaml:write",
+		"format:yaml:check": "prettier --check \"**/*.{yml,yaml}\"",
+		"format:yaml:write": "prettier --write \"**/*.{yml,yaml}\"",
 		"cspell": "cspell . --no-progress",
 		"quest:01": "bun test quests/01-js-basics",
 		"quest:02": "bun test quests/02-typescript",
@@ -30,6 +33,7 @@
 		"@biomejs/biome": "2.5.1",
 		"@types/bun": "^1.3.14",
 		"cspell": "^10.0.1",
+		"prettier": "^3.7.4",
 		"typescript": "=5.5.3"
 	}
 }

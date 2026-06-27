@@ -1,11 +1,11 @@
 services:
-	learning:
-		build: .
-		working_dir: /workspace
-		volumes:
-			- .:/workspace
-			- bun-cache:/root/.bun
-		command: bun run test:watch
+  learning:
+    build: .
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - bun-cache:/root/.bun
+    command: bun run test:watch
 
 volumes:
-	bun-cache:
+  bun-cache:
