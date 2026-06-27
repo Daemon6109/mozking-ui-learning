@@ -14,6 +14,11 @@ Your job is not to explain every detail. Your job is to get him comfortable with
 
 That loop matters more than memorizing syntax.
 
+There are two modes:
+
+- Quest mode: already passing examples. Use these to explain and break/fix.
+- Practice mode: unfinished answers. Use these after he understands the quest.
+
 ## Rule For You
 
 Do not lecture for more than five minutes at a time. Make him run or edit something constantly.
@@ -55,6 +60,14 @@ For every quest:
 10. Run the quest script again.
 
 Do not move on until he can explain the failure in plain English.
+
+After the break/fix drill, run the matching practice script:
+
+```sh
+bun run practice:01
+```
+
+Make him edit that folder's `answer.ts` until the tests pass. Do not type the answer for him unless he is completely stuck.
 
 ## Quest 01 Script
 

@@ -26,6 +26,10 @@
 		"quest:04": "bun test quests/04-reactive-ui",
 		"quest:05": "bun test quests/05-roblox-ts-vide",
 		"quests": "bun run quest:01 && bun run quest:02 && bun run quest:03 && bun run quest:04 && bun run quest:05",
+		"practice:01": "bun test ./practice/01-js-basics/challenge.ts",
+		"practice:02": "bun test ./practice/02-typescript/challenge.ts",
+		"practice:03": "bun test ./practice/03-ui-data/challenge.ts",
+		"practice:04": "bun test ./practice/04-reactive-ui/challenge.ts",
 		"roblox:compile": "bun run --filter mozking-roblox-ts-sandbox compile",
 		"roblox:watch": "bun run --filter mozking-roblox-ts-sandbox watch"
 	},

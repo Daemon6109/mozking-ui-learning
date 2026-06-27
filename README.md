@@ -58,6 +58,19 @@ bun run quest:04
 bun run quest:05
 ```
 
+## Practice Flow
+
+Quests are already passing examples. Practice challenges are intentionally unfinished.
+
+```sh
+bun run practice:01
+bun run practice:02
+bun run practice:03
+bun run practice:04
+```
+
+For each practice folder, he edits `answer.ts` until the matching challenge passes. Practice scripts are not included in `bun run check`, so the repo can stay healthy while he is still solving them.
+
 ## Docker
 
 ```sh
