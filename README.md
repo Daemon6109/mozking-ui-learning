@@ -31,7 +31,7 @@ Then follow [the mentor guide](docs/mentor-guide.md). Do not start with Docker, 
 ## Daily Flow
 
 ```sh
-bun test
+bun run test
 bun run typecheck
 bun run lint
 bun run format:write

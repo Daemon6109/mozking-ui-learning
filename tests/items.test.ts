@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { filterUnlocked, sortItemsForDisplay, toItemCard, type InventoryItem } from "../src/inventory/items";
+import { filterUnlocked, type InventoryItem, sortItemsForDisplay, toItemCard } from "../src/inventory/items";
 
 const items: InventoryItem[] = [
 	{ id: "a", name: "Ramen", rarity: "common", amount: 25 },
