@@ -1,0 +1,22 @@
+{
+	"version": "0.2",
+	"language": "en",
+	"words": [
+		"Anime",
+		"Biome",
+		"devcontainer",
+		"Gojo",
+		"luau",
+		"MozKing",
+		"Naruto",
+		"rbxts",
+		"rbxtsc",
+		"roblox",
+		"roblox-ts",
+		"Sasuke",
+		"Studio",
+		"TSX",
+		"Vide"
+	],
+	"ignorePaths": ["node_modules", "bun.lock", "dist"]
+}

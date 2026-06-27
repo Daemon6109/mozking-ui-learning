@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"biomejs.biome",
+		"oven.bun-vscode",
+		"ms-vscode.vscode-typescript-next",
+		"streetsidesoftware.code-spell-checker",
+		"eamodio.gitlens",
+		"usernamehw.errorlens",
+		"ms-azuretools.vscode-docker",
+		"EditorConfig.EditorConfig"
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"name": "mozking-ui-learning",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"packageManager": "bun@1.3.14",
+	"scripts": {
+		"check": "bun run typecheck && bun run lint && bun run cspell && bun test",
+		"test": "bun test",
+		"test:watch": "bun test --watch",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome lint .",
+		"format:check": "biome format .",
+		"format:write": "biome format . --write",
+		"cspell": "cspell . --no-progress",
+		"quest:01": "bun test quests/01-js-basics",
+		"quest:02": "bun test quests/02-typescript",
+		"quest:03": "bun test quests/03-ui-data",
+		"quest:04": "bun test quests/04-reactive-ui",
+		"quest:05": "bun test quests/05-roblox-ts-vide",
+		"quests": "bun run quest:01 && bun run quest:02 && bun run quest:03 && bun run quest:04 && bun run quest:05"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.15",
+		"@types/bun": "^1.3.5",
+		"cspell": "^10.0.1",
+		"typescript": "=5.5.3"
+	},
+	"dependencies": {
+		"@rbxts/types": "^1.0.921",
+		"@rbxts/vide": "^0.6.1",
+		"roblox-ts": "^3.0.0"
+	}
+}
