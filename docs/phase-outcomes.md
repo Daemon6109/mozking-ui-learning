@@ -18,7 +18,23 @@ He cannot yet:
 - Debug without help.
 - Touch the real UI repo.
 
-## Phase 1: JavaScript Basics
+## Phase 1: Absolute Basics
+
+After Quest 00, he should know:
+
+- Constants name values.
+- Strings are text.
+- Numbers can be changed with math.
+- Booleans are true/false.
+- Functions take input and return output.
+- Tests compare expected and received values.
+
+He is ready to move on when:
+
+- He can change one constant and explain why one test failed.
+- He can fix one tiny function without guessing randomly.
+
+## Phase 2: Arrays And Objects
 
 After Quest 01, he should know:
 
@@ -34,7 +50,7 @@ He is ready to move on when:
 - He can explain one test failure in plain English.
 - He can make a small change to `exercise.ts` and predict which test changes.
 
-## Phase 2: TypeScript Basics
+## Phase 3: TypeScript Basics
 
 After Quest 02, he should know:
 
@@ -48,7 +64,7 @@ He is ready to move on when:
 - He can identify why `"godly"` is not allowed as a trait.
 - He can explain why a missing field or wrong color fails.
 
-## Phase 3: UI Data
+## Phase 4: UI Data
 
 After Quest 03, he should know:
 
@@ -61,7 +77,7 @@ He is ready to move on when:
 - He can explain why `owned` beats "can afford" logic.
 - He can change a button label and update/fix the test.
 
-## Phase 4: Reactive UI
+## Phase 5: Reactive UI
 
 After Quest 04, he should know:
 
@@ -74,7 +90,7 @@ He is ready to move on when:
 
 - He can explain `source`, `derive`, and `subscribe` without exact syntax memorization.
 
-## Phase 5: roblox-ts/Vide
+## Phase 6: roblox-ts/Vide
 
 After Quest 05 and the sandbox, he should know:
 

@@ -33,8 +33,8 @@ Do not start with roblox-ts, Vide, Docker, GitHub, or AI. Those are too much at 
 4. Run `bun install`.
 5. Run `bun run check`.
 6. Say: "This means all tests, type checks, lint, spelling, and roblox-ts compile are passing."
-7. Open `quests/01-js-basics/exercise.ts`.
-8. Open `quests/01-js-basics/exercise.test.ts` beside it.
+7. Open `quests/00-basics/exercise.ts`.
+8. Open `quests/00-basics/exercise.test.ts` beside it.
 
 Teach this mental model:
 
@@ -64,10 +64,45 @@ Do not move on until he can explain the failure in plain English.
 After the break/fix drill, run the matching practice script:
 
 ```sh
-bun run practice:01
+bun run practice:00
 ```
 
 Make him edit that folder's `answer.ts` until the tests pass. Do not type the answer for him unless he is completely stuck.
+
+## Quest 00 Script
+
+Command:
+
+```sh
+bun run quest:00
+```
+
+Open:
+
+- `quests/00-basics/exercise.ts`
+- `quests/00-basics/exercise.test.ts`
+
+Teach:
+
+- A constant is a named value.
+- A string is text.
+- A number can be changed with math.
+- A boolean is `true` or `false`.
+- A function takes input and returns output.
+
+Break/fix drills:
+
+- Change `startingGems` from `100` to `50`.
+- Change `greet` to return `"Hi, ${name}"`.
+- Change `double` from `value * 2` to `value * 3`.
+- Change `canOpenMenu` to always return `true`.
+
+He should be able to say:
+
+- "This constant stores this value."
+- "This function takes this input."
+- "This function returns this output."
+- "The test expected one value but received another."
 
 ## Quest 01 Script
 

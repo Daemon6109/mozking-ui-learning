@@ -51,6 +51,7 @@ The sandbox has its own [tsconfig](roblox-ts-sandbox/tsconfig.json), [Rojo proje
 Run one quest at a time:
 
 ```sh
+bun run quest:00
 bun run quest:01
 bun run quest:02
 bun run quest:03
@@ -63,6 +64,7 @@ bun run quest:05
 Quests are already passing examples. Practice challenges are intentionally unfinished.
 
 ```sh
+bun run practice:00
 bun run practice:01
 bun run practice:02
 bun run practice:03
@@ -86,11 +88,12 @@ docker compose up --build
 
 ## Teaching Order
 
-1. JavaScript basics: variables, functions, arrays, objects.
-2. TypeScript basics: object types, unions, optional fields, compiler errors.
-3. UI data: turning raw game state into view models.
-4. Reactive UI: source, derive, effect, cleanup.
-5. roblox-ts/Vide: read existing TSX patterns and avoid Studio-only habits.
+1. Absolute basics: constants, strings, numbers, booleans, tiny functions.
+2. JavaScript basics: arrays and objects.
+3. TypeScript basics: object types, unions, optional fields, compiler errors.
+4. UI data: turning raw game state into view models.
+5. Reactive UI: source, derive, effect, cleanup.
+6. roblox-ts/Vide: read existing TSX patterns and avoid Studio-only habits.
 
 The important habit is copying the existing repo style and making small reviewed changes.
 
