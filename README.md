@@ -16,6 +16,16 @@ bun install
 bun run check
 ```
 
+If he is brand new, do this before teaching any syntax:
+
+1. Open the repo in VS Code.
+2. Open the terminal.
+3. Run `bun install`.
+4. Run `bun run check`.
+5. Explain that green output means the computer agrees the repo is working.
+
+Then follow [the mentor guide](docs/mentor-guide.md). Do not start with Docker, roblox-ts, or Vide.
+
 ## Daily Flow
 
 ```sh
@@ -68,3 +78,9 @@ docker compose up --build
 5. roblox-ts/Vide: read existing TSX patterns and avoid Studio-only habits.
 
 The important habit is copying the existing repo style and making small reviewed changes.
+
+## For The Teacher
+
+- Use [docs/mentor-guide.md](docs/mentor-guide.md) as the main script.
+- Use [docs/phase-outcomes.md](docs/phase-outcomes.md) to decide whether he is ready to move on.
+- Use [docs/repo-access-checklist.md](docs/repo-access-checklist.md) before giving real UI repo write access.

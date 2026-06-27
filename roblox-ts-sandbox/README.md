@@ -23,3 +23,14 @@ bun run roblox:compile
 - `src/stories`: UI Labs story shape.
 
 This is still a learning sandbox. The real UI repo has more architecture, assets, stores, hooks, and app registration.
+
+## Teaching Drill
+
+1. Run `bun run roblox:compile` from the repo root.
+2. Open `src/client/lesson_button.tsx`.
+3. Change the button label fallback from `"Clicked"` to `"Pressed"`.
+4. Compile again.
+5. Change a real UI property, like `TextSize`.
+6. Compile again.
+
+Only after that should he look at a real Anime Reborn UI component.

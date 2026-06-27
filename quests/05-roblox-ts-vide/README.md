@@ -21,9 +21,9 @@ type CounterProps = {
 
 export function Counter(props: CounterProps) {
 	const count = source(props.initialCount);
-	const label = derive(count, (value) => `Count: ${value}`);
+	const label = derive(() => `Count: ${count()}`);
 
-	return <textbutton Text={label} Event={{ Activated: () => count(count() + 1) }} />;
+	return <textbutton Text={label} MouseButton1Click={() => count(count() + 1)} />;
 }
 ```
 
@@ -33,4 +33,15 @@ The real repo has the exact conventions that matter. In actual work, he should f
 
 ```sh
 bun run quest:05
+bun run roblox:compile
 ```
+
+## Break/Fix Drill
+
+1. Open `roblox-ts-sandbox/src/client/lesson_button.tsx`.
+2. Rename `MouseButton1Click` to `FakeClick`.
+3. Run `bun run roblox:compile`.
+4. Read the compiler error.
+5. Change it back.
+
+The goal is to trust `rbxtsc` before touching the real UI repo.
