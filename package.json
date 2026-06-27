@@ -8,7 +8,8 @@
 		"roblox-ts-sandbox"
 	],
 	"scripts": {
-		"check": "bun run check:node && bun run roblox:compile && bun run compose:check && bun run yaml:check",
+		"check": "bun run check:node && bun run roblox:compile && bun run yaml:check",
+		"check:host": "bun run check && bun run compose:check",
 		"check:node": "bun run typecheck && bun run lint && bun run cspell && bun test",
 		"compose:check": "docker compose config --quiet",
 		"yaml:check": "! rg -nP '^\\t' . --glob '*.yml' --glob '*.yaml' --glob '!node_modules/**' --glob '!roblox-ts-sandbox/node_modules/**'",

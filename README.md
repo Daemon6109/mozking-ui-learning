@@ -26,6 +26,8 @@ If he is brand new, do this before teaching any syntax:
 
 Then follow [the mentor guide](docs/mentor-guide.md). Do not start with Docker, roblox-ts, or Vide.
 
+`bun run check` is safe inside the devcontainer. Run `bun run check:host` on the host machine when you specifically want to validate the Docker Compose file too.
+
 ## Daily Flow
 
 ```sh
