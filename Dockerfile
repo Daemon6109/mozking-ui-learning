@@ -7,6 +7,7 @@ RUN apt-get update \
 WORKDIR /workspace
 
 COPY package.json bun.lock* ./
+COPY roblox-ts-sandbox/package.json roblox-ts-sandbox/package.json
 RUN bun install --frozen-lockfile || bun install
 
 COPY . .

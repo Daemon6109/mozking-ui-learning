@@ -1,0 +1,35 @@
+{
+	"name": "mozking-roblox-ts-sandbox",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"Shared": {
+				"$path": "dist/shared"
+			},
+			"Stories": {
+				"$path": "dist/stories"
+			},
+			"rbxts_include": {
+				"$path": "include",
+				"node_modules": {
+					"$className": "Folder",
+					"@rbxts": {
+						"$path": "node_modules/@rbxts"
+					}
+				}
+			}
+		},
+		"ServerScriptService": {
+			"Server": {
+				"$path": "dist/server"
+			}
+		},
+		"StarterPlayer": {
+			"StarterPlayerScripts": {
+				"Client": {
+					"$path": "dist/client"
+				}
+			}
+		}
+	}
+}

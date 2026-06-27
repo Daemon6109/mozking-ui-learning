@@ -4,6 +4,11 @@ Small repo for teaching enough JavaScript, TypeScript, tests, reactive UI thinki
 
 This is intentionally outside the real UI repo. The default checks should stay green. Use the quest folders when teaching one topic at a time.
 
+The repo is split into two tracks:
+
+- Root: normal Bun/TypeScript learning with unit tests.
+- `roblox-ts-sandbox/`: real roblox-ts + Vide code that compiles with `rbxtsc`.
+
 ## Setup
 
 ```sh
@@ -19,6 +24,15 @@ bun run typecheck
 bun run lint
 bun run format:write
 ```
+
+## Roblox TS Sandbox
+
+```sh
+bun run roblox:compile
+bun run roblox:watch
+```
+
+The sandbox has its own [tsconfig](roblox-ts-sandbox/tsconfig.json), [Rojo project](roblox-ts-sandbox/default.project.json), client code, server code, shared view-model code, and a UI Labs story example.
 
 ## Quest Flow
 

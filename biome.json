@@ -8,7 +8,7 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true,
+			"preset": "recommended",
 			"correctness": {
 				"noUnusedImports": "warn",
 				"noUnusedVariables": "warn"
@@ -24,11 +24,21 @@
 		}
 	},
 	"files": {
-		"includes": [
-			"**/*.{ts,tsx,js,jsx,json,md}",
-			"!node_modules",
-			"!dist",
-			"!**/*.tsbuildinfo"
-		]
-	}
+		"includes": ["**/*.{ts,tsx,js,jsx,json,md}", "!node_modules", "!**/dist", "!**/include", "!**/*.tsbuildinfo"]
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.tsx"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noUnusedImports": "off"
+					},
+					"style": {
+						"useImportType": "off"
+					}
+				}
+			}
+		}
+	]
 }

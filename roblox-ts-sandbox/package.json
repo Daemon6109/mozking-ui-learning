@@ -1,0 +1,18 @@
+{
+	"name": "mozking-roblox-ts-sandbox",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"compile": "rbxtsc",
+		"watch": "rbxtsc -w"
+	},
+	"dependencies": {
+		"@rbxts/compiler-types": "^3.0.0-types.0",
+		"@rbxts/services": "^1.6.0",
+		"@rbxts/types": "^1.0.929",
+		"@rbxts/ui-labs": "^2.4.2",
+		"@rbxts/vide": "^0.6.1",
+		"roblox-ts": "^3.0.0",
+		"typescript": "=5.5.3"
+	}
+}

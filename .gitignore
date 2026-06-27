@@ -1,5 +1,8 @@
 node_modules
 dist
+include
+roblox-ts-sandbox/dist
+roblox-ts-sandbox/include
 *.tsbuildinfo
 .DS_Store
 .env

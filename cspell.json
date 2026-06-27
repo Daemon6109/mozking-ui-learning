@@ -13,10 +13,13 @@
 		"rbxtsc",
 		"roblox",
 		"roblox-ts",
+		"Rojo",
 		"Sasuke",
+		"screengui",
 		"Studio",
 		"TSX",
+		"uicorner",
 		"Vide"
 	],
-	"ignorePaths": ["node_modules", "bun.lock", "dist"]
+	"ignorePaths": ["node_modules", "bun.lock", "dist", "include", "roblox-ts-sandbox/dist", "roblox-ts-sandbox/include"]
 }

@@ -7,7 +7,8 @@
 		"noEmit": true,
 		"skipLibCheck": true,
 		"allowImportingTsExtensions": true,
-		"types": ["bun-types"]
+		"types": ["bun"]
 	},
-	"include": ["src/**/*.ts", "tests/**/*.ts", "quests/**/*.ts"]
+	"include": ["src/**/*.ts", "tests/**/*.ts", "quests/**/*.ts"],
+	"exclude": ["roblox-ts-sandbox"]
 }
